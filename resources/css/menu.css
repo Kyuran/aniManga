@@ -1,0 +1,15 @@
+ul.nav > li {
+	display: inline-block;
+}
+
+.nav li.open > a.open-close > b {
+	display: inline-block;
+	width: 0;
+	height: 0;
+	margin-top: 4px;
+	margin-left: 2px;
+	vertical-align: middle;
+	border-top: 4px solid;
+	border-right: 4px solid transparent;
+	border-left: 4px solid transparent;
+}

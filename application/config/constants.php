@@ -39,3 +39,8 @@ define('FOPEN_READ_WRITE_CREATE_STRICT',		'x+b');
 
 /* End of file constants.php */
 /* Location: ./application/config/constants.php */
+
+define('DS', DIRECTORY_SEPARATOR);
+define('PS', PATH_SEPARATOR);
+
+define('BACKOFFICE_PATH', 'backOffice/');
