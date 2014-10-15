@@ -20,17 +20,17 @@
 				<div class="container">
 					<nav class="nav-collapse" role="navigation">
 						<ul class="nav">
-							<li><a href="#">Gestion des scans</a></li>
+							<li><a href="#">Scans</a></li>
 							<li class="dropdown">
-								<a data-toggle="dropdown" class="open-close dropdown-toggle" href="#">Gestion des animés<b class="caret"></b></a>
+								<a data-toggle="dropdown" class="open-close dropdown-toggle" href="#">Animés<b class="caret"></b></a>
 								<ul class="dropdown-menu">
 									<li><a href="<?= site_url(array('pages/PAnime'));?>">Ajouter un animé</a></li>
 									<li><a href="#">Lien #2-b</a></li>
 									<li><a href="#">Lien #2-c</a></li>
 								</ul>
 							</li>
-							<li><a href="#">Gestion des utilisateurs</a></li>
-							<li><a href="#">Lien #4</a></li>
+							<li><a href="#">Mon profil</a></li>
+							<li><a href="#">Contact</a></li>
 						</ul>
 					</nav>
 				</div><!-- end of .container -->

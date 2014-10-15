@@ -1,0 +1,25 @@
+section.control-group {
+	display: inline-block;
+}
+
+section.login {
+	position : absolute;
+	margin-left: 72%;
+	margin-top: 2%;
+}
+
+input {
+	width: 100px;
+	height: 20px;
+	border-radius: 4px;
+}
+
+h4.login {
+	display: inline-block;
+	font-size: 15px;
+}
+
+button#login_validate {
+	padding: 2px 5px 0px 5px;
+	height: 25px;
+}

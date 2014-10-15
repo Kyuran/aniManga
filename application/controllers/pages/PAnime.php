@@ -12,7 +12,7 @@ class PAnime extends CI_Controller
 	public function index()
 	{
 		$path_anime = self::VIEW_PATH . '/anime';
-		$this->layout->view($path_anime,null,'default');
+		$this->layout->view($path_anime,null,'front_default');
 	}
 
 	public function addAnime()

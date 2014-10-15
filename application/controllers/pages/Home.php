@@ -19,7 +19,7 @@ class Home extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->layout->view('front/home',null,'default');
+		$this->layout->view('front/home',null,'front_default');
 	}
 }
 

@@ -25,6 +25,7 @@ class Layout
 	public function setDefaultLib() {
 		$this->addCss('main');
 		$this->addCss('menu');
+		$this->addCss('login');
 		$this->addSpecifiedCss('bootstrap/css/bootstrap');
 		$this->addJs('js/jquery');
 		$this->addSpecifiedJs('bootstrap/js/bootstrap');
