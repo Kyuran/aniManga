@@ -11,8 +11,11 @@
 			<script type="text/javascript" src="<?= $url ?>" ></script>
 		<?php endforeach; ?>
 	</head>
-
-	<body id="connect_layout">
+	
+	<body>
+		<?php
+			require_once 'header.php';
+		?>
 		<div class="navbar">
 				<div class="container">
 					<nav class="nav-collapse" role="navigation">
@@ -21,7 +24,7 @@
 							<li class="dropdown">
 								<a data-toggle="dropdown" class="open-close dropdown-toggle" href="#">Gestion des animés<b class="caret"></b></a>
 								<ul class="dropdown-menu">
-									<li><a href="<?= site_url(array('anime/addAnime'));?>">Ajouter un animé</a></li>
+									<li><a href="<?= site_url(array('pages/PAnimes'));?>">Ajouter un animé</a></li>
 									<li><a href="#">Lien #2-b</a></li>
 									<li><a href="#">Lien #2-c</a></li>
 								</ul>
