@@ -58,7 +58,7 @@ class AnimeModel extends CI_Model
 
 	public function selectAllAnimes()
 	{
-
+		$query
 	}
 
 	public function deleteAnimeById($id)
