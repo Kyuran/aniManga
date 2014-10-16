@@ -16,13 +16,29 @@ class PAnime extends CI_Controller
 		$this->layout->view($path_anime,$data,'front_default');
 	}
 	
+	/*
+	 * Display content video for animes
+	 */
+	public function contentVideoPage($idEpisode)
+	{
+		$this->load->model('urlmodel');
+		$result = $this->urlmodel->getUrlByIdEpisode($idEpisode);
+		$data['content_video'] = $result;
+		$this->layout->view('front/content_episode', $data, 'front_default');
+	}
+
+
 	/**
 	 * Display all infos for one anime on the front page
 	 */
 	public function animePageInfos($idAnime)
 	{
-		$res = $this->animemodel->getInfosAnimeById($idAnime);
-		$data['infos_anime'] = $res;
+		$this->load->model('episodemodel');
+		
+		$result_anime = $this->animemodel->getInfosAnimeById($idAnime);
+		$result_episodes = $this->episodemodel->getEpisodesByIdAnime($idAnime);
+		$data['infos_anime'] = $result_anime;
+		$data['infos_episodes'] = $result_episodes;
 		$this->layout->view('front/form_anime',$data,'front_default');
 	}
 

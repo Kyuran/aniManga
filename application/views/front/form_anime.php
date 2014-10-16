@@ -8,4 +8,9 @@
 	<p><strong>Genre:</strong></p>
 	<p><strong>Résumé:</strong></p> <p class="resume"><?=$infos_anime['resume'];?></p>
 </div>
-	
+<?php
+	foreach ($infos_episodes as $key => $value) {
+		echo anchor('pages/PAnime/contentVideoPage/'.$value['id'],'épisode '.$value['episode_number']);
+	} 
+?>
+	<p><a>Accéder aux épisodes</a></p>

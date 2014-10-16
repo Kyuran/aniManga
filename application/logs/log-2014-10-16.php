@@ -382,3 +382,4 @@ ERROR - 2014-10-16 12:59:33 --> Severity: Warning  --> Illegal string offset 'ti
 ERROR - 2014-10-16 12:59:33 --> Severity: Notice  --> Uninitialized string offset: 0 C:\wamp\www\aniManga\application\libraries\utils.php 23
 ERROR - 2014-10-16 13:50:41 --> Severity: Notice  --> Undefined variable: info_anime C:\wamp\www\aniManga\application\views\front\form_anime.php 3
 ERROR - 2014-10-16 14:02:57 --> Severity: Notice  --> Undefined index: parution_date C:\wamp\www\aniManga\application\views\front\form_anime.php 9
+ERROR - 2014-10-16 15:13:47 --> Severity: Notice  --> Undefined variable: idAnime C:\wamp\www\aniManga\application\models\UrlModel.php 17
