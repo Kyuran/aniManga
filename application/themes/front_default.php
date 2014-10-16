@@ -58,6 +58,9 @@
 			</div>-->
 
 			<div id="view">
+				<?php
+					$this->utils->displayAllContentsForOneEpisode($full_content);
+				?>
 				<?= $output; ?>
 			</div>
 

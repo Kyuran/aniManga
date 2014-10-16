@@ -31,12 +31,13 @@ class Login extends CI_Controller
 		$this->form_validation->set_rules('email', '"Identifiant"', 'trim|required|xss_clean');
 		$this->form_validation->set_rules('password', '"Mot de passe"', 'trim|required|xss_clean');
 		$result = $this->usermodel->userLogin($email, $password);
+		
 		if($this->form_validation->run() == false) {
-			$this->layout->view('back/anime/anime');
+			$this->layout->view('back/anime/anime', NULL, 'front_default');
 		}
 		elseif($this->form_validation->run() == true && empty($result)) {
 			$this->session->set_flashdata('noconnect', 'Aucun compte ne correspond à vos identifiants ');
-			$this->layout->view('back/anime/anime');
+			$this->layout->view('back/anime/anime', NULL, 'front_default');
 			redirect('/login');
 		}
 		else {

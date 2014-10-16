@@ -19,7 +19,10 @@ class Home extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->layout->view('front/home',null,'front_default');
+		$this->load->model('usermodel');
+		$res = $this->usermodel->allUrlsFromOneEpisode();
+		$data['full_content'] = $res;
+		$this->layout->view('front/home',$data,'front_default');
 	}
 }
 

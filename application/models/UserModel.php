@@ -16,6 +16,22 @@ class UserModel extends CI_Model
 		//$this->user = $user;
 	}
 	
+	public function allUrlsFromOneEpisode()
+	{
+		$query = 	"SELECT id, full_content
+					FROM animes_urls
+					WHERE id_episode = ? ";
+					
+		$prep = $this->db->conn_id->prepare($query);
+
+		$prep->bindValue(1, 1, PDO::PARAM_INT);
+		$prep->execute();
+
+		$result = $prep->fetchAll(PDO::FETCH_ASSOC);
+		
+		return $result;
+	}
+	
 	public function userLogin($email,$password) {
 		$query = 	"SELECT email, password
 					FROM clients
