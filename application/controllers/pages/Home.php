@@ -19,9 +19,9 @@ class Home extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->model('usermodel');
-		$res = $this->usermodel->allUrlsFromOneEpisode();
-		$data['full_content'] = $res;
+		$this->load->model('animemodel');
+		$res = $this->animemodel->getInfosFromAnimes();
+		$data['all_infos'] = $res;
 		$this->layout->view('front/home',$data,'front_default');
 	}
 }

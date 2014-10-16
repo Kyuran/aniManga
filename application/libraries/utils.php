@@ -10,7 +10,20 @@ class Utils
 	public function displayAllContentsForOneEpisode($full_content)
 	{
 		foreach ($full_content as $key => $value) {
-			echo $value['full_content'];
+			echo $value['full_content_vostfr'];
+		}
+	}	
+	
+	public function displayAllInfosAnimes($infos)
+	{
+		foreach ($infos as $key => $value) {
+			echo '<div class="image_list">';
+			echo '<img width="240" height="327" src="'.base_url().$value['thumbnail_path'].'"/>';
+			echo '<p>';
+			echo anchor('pages/PAnime/animePageInfos/'.$value['id'],$value['title_fr']);
+			//echo '<p><a class="image" href="'.anchor('panime/animePageInfos/'.$value['id']).'">'.$value['title_fr'].'</a></p>';
+			echo '</p>';
+			echo '</div>';
 		}
 	}
 }

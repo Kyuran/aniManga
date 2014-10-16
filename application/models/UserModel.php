@@ -18,7 +18,7 @@ class UserModel extends CI_Model
 	
 	public function allUrlsFromOneEpisode()
 	{
-		$query = 	"SELECT id, full_content
+		$query = 	"SELECT id, full_content_vostfr
 					FROM animes_urls
 					WHERE id_episode = ? ";
 					

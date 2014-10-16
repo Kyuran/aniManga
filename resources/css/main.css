@@ -10,7 +10,82 @@ h1.title {
 	vertical-align: middle;
 }
 
-img {
+img.logo {
 	float: left;
 	vertical-align: middle;
+}
+
+/*
+ * Page => form_anime // infos_anime
+ */
+div.infos_anime {
+	text-align: center;
+	margin: auto;
+	width: 500px;
+}
+
+div.image {
+	width: 100%;
+	height: auto;
+	text-align: center;
+	margin-bottom: 25px;
+}
+
+.infos_anime img {
+	margin: 0 auto;
+}
+
+div.infos_anime p {
+	text-align: center;
+}
+div.infos_anime p.resume {
+	text-align: justify;
+}
+
+
+/*
+ * Animes css
+ */
+
+div#images {
+	margin: 0 auto;
+	max-width: 960px;
+}
+
+.image_list {
+	position: relative;
+	display: inline-block;
+	width: 240px;
+	height: 327px;
+}
+.image_list p {
+	
+    /* N'oublions pas les transitions ! */
+    transition-property: top;
+    transition-duration: 1s;
+    -webkit-transition-property: top;
+    -webkit-transition-duration: 1s;
+    
+	color: white;
+	left: 0px;
+	top: 0px;
+	height: 50px;
+	line-height: 50px;
+	width: 100%;
+	text-align: center;
+	display: inline-block;
+	position: absolute;
+	background-color: rgba(0,0,0,0.3);
+}
+ 
+.image_list:hover p {
+	background-color: rgba(0,0,0,0.3);
+	vertical-align: middle;
+	top: 278px;
+    visibility: visible;
+}
+
+.image_list a {
+	color: white;
+	text-decoration: none;
 }

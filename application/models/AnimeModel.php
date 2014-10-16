@@ -11,9 +11,38 @@ class AnimeModel extends CI_Model
 	private $id_rating;
 	private $anime;
 
-	public function __construct(Anime $anime)
+	public function __construct()
 	{
-		$this->anime = $anime;
+	}
+	
+	public function getInfosFromAnimes()
+	{
+		$query = "	SELECT *
+					FROM animes
+				 ";
+		
+		$prep = $this->db->conn_id->prepare($query);
+		//$prep->bindValue(1, 1, PDO::PARAM_INT);
+		
+		$prep->execute();
+		$result = $prep->fetchAll(PDO::FETCH_ASSOC);
+		
+		return $result;
+	}
+
+	public function getInfosAnimeById($id)
+	{
+		$query = "	SELECT *
+					FROM animes
+					WHERE id = ?";
+		
+		$prep = $this->db->conn_id->prepare($query);
+		$prep->bindValue(1, $id, PDO::PARAM_INT);
+		
+		$prep->execute();
+		$result = $prep->fetch(PDO::FETCH_ASSOC);
+		
+		return $result;
 	}
 
 	public function insertAnime()
@@ -58,7 +87,7 @@ class AnimeModel extends CI_Model
 
 	public function selectAllAnimes()
 	{
-		$query
+
 	}
 
 	public function deleteAnimeById($id)

@@ -7,12 +7,23 @@ class PAnime extends CI_Controller
 	public function __construct()
 	{
 		parent::__construct();
+		$this->load->model('animemodel');
 	}
 
 	public function index()
 	{
 		$path_anime = self::VIEW_PATH . '/anime';
 		$this->layout->view($path_anime,$data,'front_default');
+	}
+	
+	/**
+	 * Display all infos for one anime on the front page
+	 */
+	public function animePageInfos($idAnime)
+	{
+		$res = $this->animemodel->getInfosAnimeById($idAnime);
+		$data['infos_anime'] = $res;
+		$this->layout->view('front/form_anime',$data,'front_default');
 	}
 
 	public function addAnime()
