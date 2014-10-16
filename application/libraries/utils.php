@@ -21,7 +21,6 @@ class Utils
 			echo anchor('pages/PAnime/animePageInfos/'.$value['id'],'<img width="240" height="327" src="'.base_url().$value['thumbnail_path'].'"/>');
 			echo '<p>';
 			echo anchor('pages/PAnime/animePageInfos/'.$value['id'],$value['title_fr']);
-			//echo '<p><a class="image" href="'.anchor('panime/animePageInfos/'.$value['id']).'">'.$value['title_fr'].'</a></p>';
 			echo '</p>';
 			echo '</div>';
 		}

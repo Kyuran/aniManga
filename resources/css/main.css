@@ -67,6 +67,7 @@ div#images {
     -webkit-transition-duration: 1s;*/
     
 	color: white;
+	font-weight: bold;
 	left: 0px;
 	top: 0px;
 	height: 50px;
