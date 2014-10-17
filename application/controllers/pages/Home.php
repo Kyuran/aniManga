@@ -8,7 +8,7 @@ class Home extends CI_Controller {
 	 * Maps to the following URL
 	 * 		http://example.com/index.php/welcome
 	 *	- or -  
-	 * 		http://example.com/index.php/welcome/index
+	 * 		 http://example.com/index.php/welcome/index
 	 *	- or -
 	 * Since this controller is set as the default controller in 
 	 * config/routes.php, it's displayed at http://example.com/
