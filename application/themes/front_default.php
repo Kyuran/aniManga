@@ -63,5 +63,7 @@
 
 			<div class="clear"></div>
 		</div>
-	</body>
-</html>
+		
+<?php
+	require_once 'footer.php';
+?>

@@ -14,10 +14,17 @@ img.logo {
 	float: left;
 	vertical-align: middle;
 }
-
+/*
+ * Content_episode
+ */
+.content_video {
+	text-align: center;
+	margin: 0 auto;
+}
 /*
  * Page => form_anime // infos_anime
  */
+
 div.infos_anime {
 	text-align: center;
 	margin: auto;
@@ -61,10 +68,10 @@ div#images {
 .image_list p {
 	
     /* N'oublions pas les transitions ! */
-    /*transition-property: top;
+    transition-property: top;
     transition-duration: 1s;
     -webkit-transition-property: top;
-    -webkit-transition-duration: 1s;*/
+    -webkit-transition-duration: 1s;
     
 	color: white;
 	font-weight: bold;
@@ -79,12 +86,12 @@ div#images {
 	background-color: rgba(0,0,0,0.3);
 }
  
-/*.image_list:hover p {
+.image_list:hover p {
 	background-color: rgba(0,0,0,0.3);
 	vertical-align: middle;
 	top: 278px;
     visibility: visible;
-}*/
+}
 
 .image_list a {
 	color: white;

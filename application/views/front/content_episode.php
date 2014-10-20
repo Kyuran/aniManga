@@ -1,8 +1,5 @@
+<div class="content_video">
 <?php
-	var_dump($content_video);
-	foreach ($content_video as $key => $value) {
-		echo $value['full_content_vostfr'];
-	}
-        
-        echo 'lol';
+	echo $content_video['full_content_vostfr'];
 ?>
+</div>

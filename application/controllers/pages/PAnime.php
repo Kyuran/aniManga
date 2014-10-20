@@ -19,10 +19,10 @@ class PAnime extends CI_Controller
 	/*
 	 * Display content video for animes
 	 */
-	public function contentVideoPage($idEpisode)
+	public function contentVideoPage($idUrl)
 	{
 		$this->load->model('urlmodel');
-		$result = $this->urlmodel->getUrlByIdEpisode($idEpisode);
+		$result = $this->urlmodel->getUrlByIdUrl($idUrl);
 		$data['content_video'] = $result;
 		$this->layout->view('front/content_episode', $data, 'front_default');
 	}
@@ -34,11 +34,15 @@ class PAnime extends CI_Controller
 	public function animePageInfos($idAnime)
 	{
 		$this->load->model('episodemodel');
+		$this->load->model('urlmodel');
 		
 		$result_anime = $this->animemodel->getInfosAnimeById($idAnime);
 		$result_episodes = $this->episodemodel->getEpisodesByIdAnime($idAnime);
+		$result_urls = $this->urlmodel->getUrlsByIdAnime($idAnime);
+
 		$data['infos_anime'] = $result_anime;
 		$data['infos_episodes'] = $result_episodes;
+		$data['infos_urls'] = $result_urls;
 		$this->layout->view('front/form_anime',$data,'front_default');
 	}
 
