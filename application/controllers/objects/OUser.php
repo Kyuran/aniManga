@@ -37,7 +37,7 @@ class OUser extends CI_Controller
 		return $this;
 	}
 	
-	public function setLastName($nom)
+	public function setLastName($lastName)
 	{
 		$this->lastName = $lastName;
 		return $this;

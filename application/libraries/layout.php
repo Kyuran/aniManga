@@ -28,6 +28,8 @@ class Layout
 		$this->addCss('login');
 		$this->addSpecifiedCss('bootstrap/css/bootstrap');
 		$this->addJs('js/jquery');
+		$this->addSpecifiedCss('js/jquery-ui-1.11.2/jquery-ui');
+		$this->addJs('js/jquery-ui-1.11.2/jquery-ui');
 		$this->addSpecifiedJs('bootstrap/js/bootstrap');
 	}
 
