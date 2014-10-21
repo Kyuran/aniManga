@@ -31,6 +31,7 @@
 							</li>
 							<li><a href="#">Mon profil</a></li>
 							<li><a href="#">Contact</a></li>
+                            <li><?= anchor('pages/PAnime/listAllAnimes/','Liste des animés') ;?></li>
 						</ul>
 					</nav>
 				</div><!-- end of .container -->

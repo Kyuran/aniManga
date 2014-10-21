@@ -56,14 +56,14 @@ div.infos_anime p.resume {
 
 div#images {
 	margin: 0 auto;
-	max-width: 960px;
+	max-width: 1000px;
 }
 
 .image_list {
 	position: relative;
 	display: inline-block;
-	width: 240px;
-	height: 327px;
+	width: 200px;
+	height: 287px;
 }
 .image_list p {
 	
@@ -89,11 +89,16 @@ div#images {
 .image_list:hover p {
 	background-color: rgba(0,0,0,0.3);
 	vertical-align: middle;
-	top: 278px;
+	top: 238px;
     visibility: visible;
 }
 
 .image_list a {
 	color: white;
 	text-decoration: none;
+}
+
+.display_episodes {
+    width: 100%;
+    font-weight: bold;
 }

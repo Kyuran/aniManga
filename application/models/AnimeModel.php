@@ -14,7 +14,10 @@ class AnimeModel extends CI_Model
 	public function __construct()
 	{
 	}
-	
+
+    /*
+     * Function used for Content anime video and content anime infos :)
+     */
 	public function getInfosFromAnimes()
 	{
 		$query = "	SELECT *
@@ -30,6 +33,9 @@ class AnimeModel extends CI_Model
 		return $result;
 	}
 
+    /*
+     * Function used for Content anime video and content anime infos :)
+     */
 	public function getInfosAnimeById($id)
 	{
 		$query = "	SELECT *

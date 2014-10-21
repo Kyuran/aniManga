@@ -25,5 +25,5 @@
 			?>
 		</div>
 	</div>
-	<p><a id="opener" onclick="displayEpisodes()">Accéder aux épisodes</a></p>
-	<?php var_dump($infos_urls);	?>
+	<p><button class="display_episodes" onclick="displayEpisodes()">Accéder aux épisodes</button></p>
+</div>

@@ -11,9 +11,9 @@ class AnimeManager extends CI_Model
 	private $id_rating;
 	private $anime;
 
-	public function __construct(Anime $anime)
+	public function __construct()
 	{
-		$this->anime = $anime;
+		//his->anime = $anime;
 	}
 
 	public function insertAnime()

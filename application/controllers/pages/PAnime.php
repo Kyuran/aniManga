@@ -15,6 +15,17 @@ class PAnime extends CI_Controller
 		$path_anime = self::VIEW_PATH . '/anime';
 		$this->layout->view($path_anime,NULL,'front_default');
 	}
+
+    /*
+     * List All Animes
+     */
+    public function listAllAnimes()
+    {
+        $result_infos_anime = $this->animemodel->getInfosFromAnimes();
+        $data['infos_animes'] = $result_infos_anime;
+        $this->layout->view('front/animes/infos/listAnimes',$data,'front_default');
+    }
+
 	/*
 	 * Display content video for animes
 	 */
